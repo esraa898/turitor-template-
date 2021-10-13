@@ -37,22 +37,25 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-// logo slider
+//logo slider
 var swiper = new Swiper(".mySwiper", {
+  slidesPerGroup: 1,
   slidesPerView: 5,
-  slidesPerGroup: 5,
   loop: true,
-  // autoplay: true,
-  loopFillGroupWithBlank: true,
-  centeredSlides: true,
+  lazy: true,
+  autoplay: true,
   mousewheel: true,
   breakpoints: {
-    640: {
+    340: {
       slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 5,
